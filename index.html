@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Website</title>
+    <link rel="stylesheet" href="styles.css" >
+</head>
+<body>
+    <header>
+        <h1>...Simple Blog...</h1>
+    </header>
+
+    <main>
+        <!-- First Post -->
+        <article class="post">
+            <h2>Lymio Casual Shirt for Men</h2>
+            <p>Casual formal attire is a style that is caught in the middle ground between casual and formal clothing.</p>
+            <img src="img1.jpg" alt="Lymio Casual Shirt for Men">
+            <div class="heart-button" onclick="toggleFavorite(this)">❤️</div>
+            <div class="price">$29.99</div>
+            <button class="add-to-cart">Add to Cart</button>
+            <div class="reviews">
+                <span class="star-rating" onclick="updateRating(this)">★</span>
+                <span class="star-rating" onclick="updateRating(this)">★</span>
+                <span class="star-rating" onclick="updateRating(this)">★</span>
+                <span class="star-rating" onclick="updateRating(this)">★</span>
+                <span class="star-rating" onclick="updateRating(this)">★</span>
+                <span>(5 reviews)</span>
+            </div>
+            <button class="buy-now">Buy Now</button>
+        </article>
+
+        <!-- Second Post -->
+        <article class="post">
+            <h2>Vebnor Men Solid Casual Light Blue Shirt</h2>
+            <p>This shirt boasts a modern yet classic design that seamlessly bridges the gap between casual and sophisticated. The regular fit ensures comfort without sacrificing style. <span class="read-more" onclick="toggleText(this)">Read more...</span></p>
+            <p class="more-text" style="display:none;">This design of the men's shirt is tastefully incorporated to make a statement without overwhelming your outfit. Choose the outfit that best complements your style.</p>
+            <img src="img2.jpg" alt="Vebnor Men Solid Casual Light Blue Shirt">
+            <div class="heart-button" onclick="toggleFavorite(this)">❤️</div>
+            <div class="price">$34.99</div>
+            <button class="add-to-cart">Add to Cart</button>
+            <div class="reviews">
+                <span class="star-rating" onclick="updateRating(this)">★</span>
+                <span class="star-rating" onclick="updateRating(this)">★</span>
+                <span class="star-rating" onclick="updateRating(this)">★</span>
+                <span class="star-rating" onclick="updateRating(this)">★</span>
+                <span class="star-rating" onclick="updateRating(this)">★</span>
+                <span>(5 reviews)</span>
+            </div>
+            <button class="buy-now">Buy Now</button>
+        </article>
+
+        <!-- Third Post -->
+        <article class="post">
+            <h2>LELEBEAR Men's Stretch Anti-Wrinkle Dress Shirt</h2>
+            <p>After years of research, we have increased the elasticity and breathability of our fabric to improve your day-to-day comfort.</p>
+            <img src="img3.jpg" alt="LELEBEAR Men's Stretch Anti-Wrinkle Dress Shirt">
+            <div class="heart-button" onclick="toggleFavorite(this)">❤️</div>
+            <div class="price">$39.99</div>
+            <button class="add-to-cart">Add to Cart</button>
+            <div class="reviews">
+                <span class="star-rating" onclick="updateRating(this)">★</span>
+                <span class="star-rating" onclick="updateRating(this)">★</span>
+                <span class="star-rating" onclick="updateRating(this)">★</span>
+                <span class="star-rating" onclick="updateRating(this)">★</span>
+                <span class="star-rating" onclick="updateRating(this)">★</span>
+                <span>(5 reviews)</span>
+            </div>
+            <button class="buy-now">Buy Now</button>
+        </article>
+    </main>
+
+    <footer>🔥Designed by Blog🔥</footer>
+    <script src="script.js"></script>
+</body>
+</html>
