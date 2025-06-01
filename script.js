@@ -3,8 +3,10 @@ function toggleFavorite(heart) {
 }
 
 function toggleText(link) {
-  var moreText = link.previousElementSibling.nextElementSibling;
-  if (moreText.style.display === "none") {
+  const article = link.closest(".post");
+  const moreText = article.querySelector(".more-text");
+
+  if (moreText.style.display === "none" || moreText.style.display === "") {
     moreText.style.display = "inline";
     link.textContent = "Read less...";
   } else {
@@ -14,17 +16,13 @@ function toggleText(link) {
 }
 
 function updateRating(star) {
-  var stars = star.parentNode.querySelectorAll(".star-rating");
-  var index = Array.from(stars).indexOf(star);
+  const stars = star.parentNode.querySelectorAll(".star-rating");
+  const index = Array.from(stars).indexOf(star);
 
-  stars.forEach(function (star) {
-    star.classList.remove("filled");
+  stars.forEach((s, i) => {
+    s.classList.toggle("filled", i <= index);
   });
 
-  for (var i = 0; i <= index; i++) {
-    stars[i].classList.add("filled");
-  }
-
-  var reviewCount = star.parentNode.querySelector("span:last-child");
-  reviewCount.textContent = `(${index + 1} reviews)`;
+  const reviewCount = star.parentNode.querySelector("span:last-child");
+  reviewCount.textContent = `(${index + 1} review${index === 0 ? "" : "s"})`;
 }

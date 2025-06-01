@@ -156,3 +156,11 @@ footer {
         width: 100%;
     }
 }
+
+.favorited {
+    color: red;
+}
+
+.filled {
+    color: orange;
+}
